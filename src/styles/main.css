@@ -425,13 +425,13 @@ html .swiper-pagination .swiper-pagination-bullet-active{
     font-size: 1.3rem;
     color: #454545;
 }
-.footerList li.current *{
+.footerList li a.current *{
     color: #ff4745;
 }
-.footerList li.current .img1{
+.footerList li a.current .img1{
     display: none;
 }
-.footerList li.current .img2{
+.footerList li a.current .img2{
     display: inline-block;
 }
 .footerList li img{
@@ -495,6 +495,9 @@ html .swiper-pagination .swiper-pagination-bullet-active{
     text-align: center;
     margin-bottom: 1rem;
     border: 1px solid #d7d7d7;
+}
+.chooseBstype4 li a{
+    display: block;
 }
 .bnChoDesign{
     width: 100%;
@@ -645,6 +648,17 @@ html .swiper-pagination .swiper-pagination-bullet-active{
     text-align: center;
     font-size: 1.6rem;
     box-shadow: 0 5px 25px -5px #e6e6e6;
+}
+.tj_all_pagination li.swiper-pagination-bullet-active{
+    opacity: 1;
+    background: #fff;
+}
+.tj_all_pagination li.swiper-pagination-bullet{
+    height: auto;
+    display: inline-block;
+    border-radius: inherit;
+    background: #fff;
+    opacity: 1;
 }
 .tj_all_swiperContainer{
      overflow: hidden;

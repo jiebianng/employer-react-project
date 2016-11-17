@@ -1,25 +1,92 @@
-[
-  {
-    "swiper":
-    [
-      {
-        "imgSrc": "http://bpic.588ku.com/element_origin_min_pic/16/09/11/2157d55defe209f.jpg",
-        "a_link": "https://www.baidu.com/"
-      },
-      {
-        "imgSrc": "http://bpic.588ku.com/element_origin_min_pic/16/09/11/2157d55defe209f.jpg",
-        "a_link": "https://www.baidu.com/"
-      },
-      {
-        "imgSrc": "http://bpic.588ku.com/element_origin_min_pic/16/09/11/2157d55defe209f.jpg",
-        "a_link": "https://www.baidu.com/"
-      },
-      {
-        "imgSrc": "http://bpic.588ku.com/element_origin_min_pic/16/09/11/2157d55defe209f.jpg",
-        "a_link": "https://www.baidu.com/"
-      }
-    ]
-  }
-]
-
-
+{
+  "swiper":
+  [
+    {
+    "imgSrc": "http://bpic.588ku.com//back_pic/04/14/64/8058204589e82b2.jpg!/fw/588/quality/90/unsharp/true/compress/true/canvas/588x225",
+    "a_link": "http://588ku.com/xiangqingye/4146480.html"
+    },
+    {
+    "imgSrc": "http://bpic.588ku.com//back_pic/04/14/59/69582037ef2ab31.jpg!/fw/588/quality/90/unsharp/true/compress/true/canvas/588x225",
+    "a_link": "http://588ku.com/xiangqingye/4145969.html"
+    },
+    {
+    "imgSrc": "http://bpic.588ku.com//back_pic/04/15/21/215821d72764e62.jpg!/fw/588/quality/90/unsharp/true/compress/true/canvas/588x225",
+    "a_link": "http://588ku.com/xiangqingye/4152121.html"
+    }
+  ],
+  "my":
+  [
+    {
+      "name":"黛芙妮蜜拉贝儿",
+      "imgurl":"http://img95.699pic.com/photo/00002/4542.jpg_wh300.jpg",
+      "phone":"15836955623",
+      "nickname":"宝塔镇河妖",
+      "carry":60,
+      "beEvaluated":70,
+      "all":60
+    }
+  ],
+  "supply":{
+      "supplytyperange":[
+        {
+          "typerange":"朝阳"
+        },
+        {
+          "typerange":"简阳"
+        }
+      ],
+      "supplytypestyle":[
+        {
+          "typestyle":"类型一"
+        },
+        {
+          "typestyle":"类型二"
+        }
+      ],
+      "list":
+      [
+        {
+          "id":1,
+          "info":"这是一个店铺",
+          "time":"今天15:30",
+          "imgurl":"http://bpic.588ku.com/element_pic/00/00/00/00568f568e23c94.jpg",
+          "name":"黛芙妮蜜拉贝儿",
+          "startaddress":"北京市海淀区",
+          "startrange":"距离我50.3km",
+          "endaddress":"朝阳大悦城",
+          "endrange":"朝阳北路",
+          "money":"200.00",
+          "typerange":"朝阳",
+          "typestyle":"类型一"
+        },
+        {
+          "id":2,
+          "info":"这是新开的店铺",
+          "time":"早上6:30",
+          "imgurl":"http://bpic.588ku.com/element_pic/16/11/09/9ccd36f15d71912746b955aa4ebc1d6c.jpg",
+          "name":"美好回忆",
+          "startaddress":"北京市海淀区",
+          "startrange":"距离我150.3km",
+          "endaddress":"朝阳大悦城",
+          "endrange":"朝阳东路",
+          "money":"120.00",
+          "typerange":"朝阳",
+          "typestyle":"类型二"
+        },
+        {
+          "id":3,
+          "info":"店铺1111",
+          "time":"早上6:30",
+          "imgurl":"http://bpic.588ku.com/element_pic/00/94/58/5156f2c9443a664.jpg",
+          "name":"东江tt",
+          "startaddress":"北京市海淀区",
+          "startrange":"距离我150.3km",
+          "endaddress":"朝阳大悦城",
+          "endrange":"朝阳东路",
+          "money":"120.00",
+          "typerange":"简阳",
+          "typestyle":"类型一"
+        }
+      ]
+    }
+}
