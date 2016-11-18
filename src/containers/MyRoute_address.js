@@ -3,13 +3,12 @@ import React,{ Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router';
 import Header from '../components/Header';
-import * as userApi from '../api/user-api';
 import * as main from '../components/main-api';
 class MyRoute_address extends Component {
     constructor(props) {
         super(props);
-        this.title = '我的地址';
-        this.col = <Link to='' className="Bri">管理&nbsp;&nbsp;</Link>;
+        this.title = '个人信息';
+        this.col = <Link to='/My/address_edit' className="Bri">管理&nbsp;&nbsp;</Link>;
     }
     componentDidMount() {
         main.choType();

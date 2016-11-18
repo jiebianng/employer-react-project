@@ -78,21 +78,21 @@ class MyRoute extends Component {
                                 </Link>
                             </div>
                             <div className="form-group1">
-                                <Link to='/My/address'>
+                                <a href="javascript:void (0)">
                                     <div className="te-cell wh-no fo-se-13 pad1 pl-0">认证</div>
                                     <div className="te-cell wi-1000 te-ri fo-se-13 pad1 pl-0 fo-co-2">雇主可忽略</div>
                                     <div className="te-cell pad1">
                                         <p><img src={require('../images/icon-rigin.png')} alt="" height="16"/></p>
                                     </div>
-                                </Link>
+                                </a>
                             </div>
                             <div className="form-group1">
-                                <Link to='/My/address'>
+                                <a  href="javascript:void (0)">
                                     <div className="te-cell wh-no fo-se-13 pad1 pl-0">我的微社区</div>
                                     <div className="te-cell te-ri wi-1000 pad1">
                                         <p><img src={require('../images/icon-rigin.png')} alt="" height="16"/></p>
                                     </div>
-                                </Link>
+                                </a>
                             </div>
                         </div>
                     </div>

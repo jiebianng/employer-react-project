@@ -1,6 +1,7 @@
 'use strict';
 import React,{ Component } from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import * as otherApi from '../api/other-api';
@@ -79,7 +80,7 @@ class SupplyRoute extends Component {
                                     <div className="body-back-2">
                                         <div className="pad1 bb-1">
                                             <textarea name="" id="" cols="30" rows="10" className="form-control wi-60 ve-mi" placeholder="请输入需求说明" disabled="disabled" value={repo.info}></textarea>
-                                            <a href="page22.html" className="form-btnMi wi-30">抢单</a>
+                                            <Link to='Supply/grad' className="form-btnMi wi-30">抢单</Link>
                                         </div>
                                         <div className="pad1 pb-0">
                                             <p><img src={require('../images/icon-ncvtime.png')} alt="" style={{height: '2rem',verticalAlign: 'bottom',marginRight: '.5rem'}} className="img2"/>{repo.time}</p>

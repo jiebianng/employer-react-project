@@ -1,5 +1,6 @@
 import $ from '../plugs/jquery';
-import '../plugs/swiper-3.4.0.min.js';
+import '../plugs/swiper-3.4.0.min';
+import '../plugs/validform';
 
 /**
  * 一般轮播效果
@@ -30,7 +31,6 @@ export function tj_all_swiper() {
             pagination: '.tj_all_pagination',
             paginationClickable: true,
             paginationBulletRender: function (swiper, index, className) {
-                console.log(index);
                 var indexName = '';
                 if(index==0){
                     indexName = '进行中'
@@ -78,4 +78,61 @@ export function choType() {
             _this.addClass('active').nextAll().removeClass('active');
         }
     });
+    //服务地址操作
+    $('.addressDel').click(function(e){
+        e.stopPropagation();
+        var _this = $(this);
+        _this.parents("li").remove();
+    });
+}
+
+/**
+ * 表单验证
+ */
+
+export function valCheck() {
+    var veForm = $(".registerform");
+    if(veForm.length>0){
+        veForm.Validform({
+            datatype:{
+                "nl": /^.{1,30}$/,//不能为空且为30字符
+                "n": /^.{1,500}$/,//不能为空
+                "address": /^.{2,100}$/,//不能为空且为30字符
+                "phone":/^[1][0-9]{10}/,//手机号
+                "code":/^(^\d{15}$|^\d{18}$|^\d{17}(\d|X|x))$///身份证
+            },
+            beforeSubmit:function(){
+                window.location.href='/My/message';
+                return false;
+            }
+        });
+        veForm.find('textarea,input').each(function(){
+            var _this = $(this);
+            var check =_this.attr('datatype');
+            if(check){
+                _this.on('keyup paste', function() {
+                    var i = 0;
+                    veForm.find('textarea,input').each(function(){
+                        var _this = $(this);
+                        var check =_this.attr('datatype');
+                        if(check){
+                            var val = _this.val();
+                            if(val=='') {
+                                i++;
+                            }
+                            if(i>0){
+                                $("[type='submit']").addClass('body-back-6');
+                            }else{
+                                $("[type='submit']").removeClass('body-back-6');
+                            }
+                        }
+                    });
+                });
+            }
+        });
+        $('#Validform_msg .iframe').html('<a class="Validform_close" href="javascript:void(0);">确定</a>');
+        $('.Validform_close').click(function(){
+            $('#Validform_msg').fadeOut(100);
+        });
+    }
 }

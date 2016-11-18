@@ -29,25 +29,25 @@ class IndexRoute extends Component {
                     <Swipers swi_data={this.props.swi_data} />
                     <ul className="oneBsList clearfix" style={{marginTop: ".5rem"}}>
                         <li>
-                            <a href="">
+                            <a href="javascript:void (0)">
                                 <img src={require('../images/oneBsList1.jpg')} alt="" width="100%"/>
                                 <div className="show">品牌<br/>设计</div>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="javascript:void (0)">
                                 <img src={require('../images/oneBsList2.jpg')} alt="" width="100%"/>
                                 <div className="show">摄影<br/>摄像</div>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="javascript:void (0)">
                                 <img src={require('../images/oneBsList3.jpg')} alt="" width="100%"/>
                                 <div className="show">烹饪<br/>料理</div>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="javascript:void (0)">
                                 <img src={require('../images/oneBsList4.jpg')} alt="" width="100%"/>
                                 <div className="show">建筑<br/>设计</div>
                             </a>
