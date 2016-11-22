@@ -6,3 +6,17 @@ export function getUsersSuccess(users) {
         users
     };
 }
+
+export function getLoginSuccess(states) {
+    return {
+        type: types.GET_Login_SUCCESS,
+        states
+    };
+}
+
+export function getOrderListSuccess(orders) {
+    return {
+        type: types.GET_Order_SUCCESS,
+        orders
+    };
+}

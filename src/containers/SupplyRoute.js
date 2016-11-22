@@ -4,11 +4,13 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import * as state from '../state/state-types';
 import * as otherApi from '../api/other-api';
 let query = {};
 class SupplyRoute extends Component {
     constructor(props) {
         super(props);
+        state.getUserState('/Supply');
         this.handleRangeClick = this.handleRangeClick.bind(this);
         this.handleStyleClick = this.handleStyleClick.bind(this);
     }
@@ -103,7 +105,7 @@ class SupplyRoute extends Component {
                                                 </p>
                                             </div>
                                             <div className="te-cell wh-no te-ri pad1 ve-mi">
-                                                <p><a href="page22.html"><img src={require('../images/icon-rigin.png')} alt="" height="20"/></a></p>
+                                                <p><Link to='Supply/grad'><img src={require('../images/icon-rigin.png')} alt="" height="20"/></Link></p>
                                             </div>
                                         </div>
                                         <div className="pad1 te-ri fo-se-14"><span>赏金</span><span className="fo-co-1">￥{repo.money}</span></div>

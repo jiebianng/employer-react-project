@@ -17,6 +17,9 @@ import My_order from '../containers/MyRoute_order'; //我的订单
 import My_address from '../containers/MyRoute_address'; //我的地址
 import My_address_edit from '../containers/MyRoute_address_edit'; //我的地址编辑
 import My_password from '../containers/MyRoute_password'; //我的密码修改
+import My_login from '../containers/MyRoute_login'; //登录
+import My_register from '../containers/MyRoute_register'; //注册
+import My_assess from '../containers/MyRoute_assess'; //服务评价
 
 class App extends Component {
     render(){
@@ -35,6 +38,9 @@ class App extends Component {
                     <Route path='/My/address' component={My_address}/>
                     <Route path='/My/address_edit' component={My_address_edit}/>
                     <Route path='/My/password' component={My_password}/>
+                    <Route path='/My/login' component={My_login}/>
+                    <Route path='/My/register' component={My_register}/>
+                    <Route path='/My/assess' component={My_assess}/>
                 </Route>
             </Router>
         );

@@ -26,7 +26,8 @@
       "address":"四川省成都市成都理工大学",
       "carry":60,
       "beEvaluated":70,
-      "all":60
+      "all":60,
+      "state":true
     }
   ],
   "supply":{
@@ -91,5 +92,56 @@
           "typestyle":"类型一"
         }
       ]
-    }
+    },
+  "orderList":{
+    "newList":[
+      {
+        "time":"14:00--16:00",
+        "address":"北京市海淀区",
+        "money":"200元"
+      },
+      {
+        "time":"11:00--16:00",
+        "address":"北京市海淀区",
+        "money":"240元"
+      },
+      {
+        "time":"14:00--16:00",
+        "address":"北京市海淀区",
+        "money":"210元"
+      }
+    ],
+    "assessList":[
+      {
+        "shopName":"壹加壹科技有限公司1",
+        "imgUrl":"http://bpic.588ku.com/element_pic/16/11/09/9ccd36f15d71912746b955aa4ebc1d6c.jpg",
+        "info":"服务范围：计算机、电子数据软件相关...",
+        "money":"200.00元",
+        "allmoney":"200.00元"
+      },
+      {
+        "shopName":"壹加壹科技有限公司2",
+        "imgUrl":"http://bpic.588ku.com/element_pic/16/11/09/9ccd36f15d71912746b955aa4ebc1d6c.jpg",
+        "info":"服务范围：计算机...",
+        "money":"400.00元",
+        "allmoney":"400.00元"
+      }
+    ],
+    "allList":[
+      {
+        "shopName":"壹加壹科技1",
+        "imgUrl":"http://bpic.588ku.com/element_pic/16/11/09/9ccd36f15d71912746b955aa4ebc1d6c.jpg",
+        "info":"服务范围：计算机、电子数据软件相关...",
+        "money":"200.00元",
+        "allmoney":"200.00元"
+      },
+      {
+        "shopName":"壹加壹科技2",
+        "imgUrl":"http://bpic.588ku.com/element_pic/16/11/09/9ccd36f15d71912746b955aa4ebc1d6c.jpg",
+        "info":"服务范围：计算机...",
+        "money":"400.00元",
+        "allmoney":"400.00元"
+      }
+    ]
+  }
 }

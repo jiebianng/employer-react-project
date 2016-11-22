@@ -1,5 +1,7 @@
 // Users
 export const GET_USERS_SUCCESS = 'GET_USERS_SUCCESS';
+export const GET_Login_SUCCESS = 'GET_Login_SUCCESS';
+export const GET_Order_SUCCESS = 'GET_Order_SUCCESS';
 
 // Others
 export const GET_OTHERS_SWI = 'GET_OTHERS_SWI';

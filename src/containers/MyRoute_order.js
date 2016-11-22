@@ -8,13 +8,17 @@ import * as userApi from '../api/user-api';
 import * as main from '../components/main-api';
 class MyRoute_order extends Component {
     componentDidMount() {
+        userApi.getOrderList();
+    }
+    componentDidUpdate() {
         main.tj_all_swiper();
+        main.choType();
     }
     render(){
         return (
             <div>
                 <Header title="我的订单"/>
-                <Swiper_order/>
+                <Swiper_order orders={this.props.orders}/>
                 <Footer/>
             </div>
         );
@@ -22,7 +26,7 @@ class MyRoute_order extends Component {
 }
 const mapStateToProps = function(store) {
     return {
-        users: store.userState.users
+        orders: store.userState.orders
     };
 };
 export default connect(mapStateToProps)(MyRoute_order);

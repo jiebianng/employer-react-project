@@ -719,6 +719,7 @@ html .swiper-pagination .swiper-pagination-bullet-active{
     display: inline-block;
     width: 1.4rem;
     height: 1.4rem;
+    margin-right: .4rem;
     background: url("../images/icon-xin.png")no-repeat;
     background-size: 100% 100%;
 }

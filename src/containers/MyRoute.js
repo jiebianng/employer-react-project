@@ -4,8 +4,13 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import * as state from '../state/state-types';
 import * as userApi from '../api/user-api';
 class MyRoute extends Component {
+    constructor(props) {
+        super(props);
+        state.getUserState('/My');
+    }
     componentDidMount() {
         userApi.getUsers();
     }
