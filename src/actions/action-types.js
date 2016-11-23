@@ -1,3 +1,7 @@
+import * as Compatibility from '../components/Compatibility-api';
+Compatibility.symbolNo();
+
+
 // Users
 export const GET_USERS_SUCCESS = 'GET_USERS_SUCCESS';
 export const GET_Login_SUCCESS = 'GET_Login_SUCCESS';

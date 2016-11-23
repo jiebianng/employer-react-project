@@ -16,7 +16,7 @@ export default function(props) {
                                     <ul className="orderCoLiTel">
                                         {props.orders.newList.map((repo,i) => {
                                             return (
-                                                <li key = {i}>
+                                                <li className="mb-2" key = {i}>
                                                     <div className="orderCoLi clearfix">
                                                         <div className="le active">
                                                             订单详情
@@ -51,7 +51,7 @@ export default function(props) {
                                     <ul className="orderCoLiTel">
                                         {props.orders.assessList.map((repo,i) => {
                                             return (
-                                                <li key={i}>
+                                                <li className="mb-2" key={i}>
                                                     <div className="form-group1 bt-1">
                                                         <Link to='/Supply/grad'>
                                                             <div className="te-cell wh-no fo-se-13 pad1 pl-0">
