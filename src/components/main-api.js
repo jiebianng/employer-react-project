@@ -134,3 +134,73 @@ export function valCheck(){
     });
     return curform.check();
 }
+
+/**
+ * 选择配送时间
+ */
+
+export function choTimePop(){
+    var ht = '';
+    $('.bnChoDesign li').each(function(){
+        ht+=$(this).html()+' ';
+    });
+    $('#bnChoDesShow').val(ht);
+    $(".popupTimeOpen").click(function(){
+        $('body').append(
+            '<div id="popupTimeCho" style="position: fixed;top: 0;left: 0;background-color: rgba(0, 0, 0, 0.7);width: 100%;height:100%;z-index: 99999999;text-align: center;">'+
+            '   <div style="display: table;width: 100%;height: 100%;">'+
+            '  <div style="display: table-cell;vertical-align: middle;">'+
+            '   <div class="pad2">'+
+            '   <div class="popupTimeCho clearfix">'+
+            '   <h3>请选择配送时间</h3>'+
+            '   <ul class="le">'+
+            '   <li class="active">今天</li>'+
+            '   <li>明天</li>'+
+            '   <li>后天</li>'+
+            '   <li>其他时间</li>'+
+            '   </ul>'+
+            '   <ul class="ri">'+
+            '   <li>立即配送</li>'+
+            '   <li>11:15</li>'+
+            '<li>11:15</li>'+
+            '<li>11:25</li>'+
+            '<li>11:35</li>'+
+            '<li>11:45</li>'+
+            '<li>11:15</li>'+
+            '<li>11:15</li>'+
+            '<li>11:15</li>'+
+            '<li>11:15</li>'+
+            '<li>11:15</li>'+
+            '<li>11:15</li>'+
+            '<li>11:15</li>'+
+            '<li>11:15</li>'+
+            '<li>11:15</li>'+
+            '<li>11:15</li>'+
+            '<li>11:15</li>'+
+            '<li>11:15</li>'+
+            '<li>11:15</li>'+
+            '<li>11:15</li>'+
+            '<li>11:15</li>'+
+            '<li>11:15</li>'+
+            '<li>11:15</li>'+
+            '<li>11:15</li>'+
+            '<li>11:15</li>'+
+            '<li>11:15</li>'+
+            '<li>11:15</li>'+
+            '<li>11:15</li>'+
+            '<li>11:15</li>'+
+            '<li>11:15</li>'+
+            '</ul>'+
+            '</div>'+
+            '</div>'+
+            '</div>'+
+            '</div> '+
+            '</div>'
+        );
+        $('.popupTimeCho .ri li').click(function(){
+            var _this = $(this);
+            $('#bnChoDesShow').val(ht+_this.html());
+            $('#popupTimeCho').remove();
+        });
+    });
+}

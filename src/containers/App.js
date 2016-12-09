@@ -20,6 +20,8 @@ import My_password from '../containers/MyRoute_password'; //我的密码修改
 import My_login from '../containers/MyRoute_login'; //登录
 import My_register from '../containers/MyRoute_register'; //注册
 import My_assess from '../containers/MyRoute_assess'; //服务评价
+import My_assessOrder from '../containers/MyRoute_assessOrder'; //服务订单提交
+import My_orderSure from '../containers/MyRoute_orderSure'; //订单确认
 
 class App extends Component {
     render(){
@@ -41,6 +43,8 @@ class App extends Component {
                     <Route path='/My/login' component={My_login}/>
                     <Route path='/My/register' component={My_register}/>
                     <Route path='/My/assess' component={My_assess}/>
+                    <Route path='/My/assessOrder' component={My_assessOrder}/>
+                    <Route path='/My/orderSure' component={My_orderSure}/>
                 </Route>
             </Router>
         );
