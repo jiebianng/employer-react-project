@@ -16,6 +16,30 @@ export function swiper() {
 }
 
 /**
+ * 发送验证码
+ */
+
+export function sendCode(){
+    $('.sendCodeCol').click(function(){
+        var _this = $(this);
+        var _Has = _this.hasClass("active");
+        if(!_Has){
+            var i = 60;
+            _this.addClass("active");
+            var cle = setInterval(function(){
+                i--;
+                _this.html(i);
+                if(i<=1){
+                    _this.removeClass("active");
+                    clearInterval(cle);
+                    _this.html('验证');
+                }
+            },1000);
+        }
+    });
+}
+
+/**
  * 我的订单页面滑动事件
  */
 

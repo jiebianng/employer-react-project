@@ -9,6 +9,7 @@ class MyRoute_orderSure extends Component {
         main.valCheck();
         main.choType();
         main.choTimePop();
+        main.sendCode();
     }
     handleSubmit (event){
         event.preventDefault();
